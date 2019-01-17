@@ -1,0 +1,20 @@
+---
+- name: Install the fail2ban package.
+  package:
+    name: fail2ban
+    state: latest
+
+- name: Override basic configurations of Fail2Ban.
+  copy:
+    src: ../templates/jail.local.j2
+    dest: /etc/fail2ban/jail.local
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Restart Fail2Ban service.
+  systemd:
+    state: restarted
+    daemon_reload: yes
+    name: fail2ban
+
