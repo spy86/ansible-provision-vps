@@ -1,0 +1,28 @@
+---
+- name: Ensure vpsuser group is present
+  group:
+    name: vpsuser
+    state: present
+
+- name: Ensure vpsuser group has sudo privileges
+  lineinfile:
+    dest: /etc/sudoers
+    state: present
+    regexp: "^%vpsuser"
+    line: "%vpsuser ALL=(ALL:ALL) ALL"
+    validate: "/usr/sbin/visudo -cf %s"
+
+- name: Install the `sudo` package
+  package:
+    name: sudo
+    state: latest
+
+- name: Create the non-root user account
+  user:
+    name: "{{ username }}"
+    password: "{{ password }}"
+    shell: /bin/bash
+    update_password: on_create
+    groups: vpsuser
+    append: yes
+
