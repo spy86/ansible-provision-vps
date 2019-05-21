@@ -1,7 +1,9 @@
 Role Name
 =========
 
-Provision a new VPS server with hardened SSH,FW,Fail2Ban.
+![ansible-provision-vps](https://img.shields.io/github/issues/spy86/ansible-provision-vps.svg) ![ansible-provision-vps](https://img.shields.io/github/forks/spy86/ansible-provision-vps.svg) ![ansible-provision-vps](https://img.shields.io/github/stars/spy86/ansible-provision-vps.svg) ![ansible-provision-vps](https://img.shields.io/github/license/spy86/ansible-provision-vps.svg) ![ansible-provision-vps](https://img.shields.io/twitter/url/https/github.com/spy86/ansible-provision-vps.svg?style=social)
+
+Provision a new VPS server with hardened [SSH](https://www.ssh.com/ssh/), [FW](https://netfilter.org/), [Fail2Ban](https://www.fail2ban.org).
 
 Requirements
 ------------
@@ -49,14 +51,3 @@ Example Playbook
     - fail2ban
 
 ```
-
-License
--------
-
-MIT
-
-Author Information
-------------------
-
-Maciej Michalski
-
