@@ -1,7 +1,7 @@
 Role Name
 =========
 
-![ansible-provision-vps](https://img.shields.io/github/issues/spy86/ansible-provision-vps.svg) ![ansible-provision-vps](https://img.shields.io/github/forks/spy86/ansible-provision-vps.svg) ![ansible-provision-vps](https://img.shields.io/github/stars/spy86/ansible-provision-vps.svg) ![ansible-provision-vps](https://img.shields.io/github/license/spy86/ansible-provision-vps.svg) ![ansible-provision-vps](https://img.shields.io/twitter/url/https/github.com/spy86/ansible-provision-vps.svg?style=social)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Provision a new VPS server with hardened [SSH](https://www.ssh.com/ssh/), [FW](https://netfilter.org/), [Fail2Ban](https://www.fail2ban.org).
 
